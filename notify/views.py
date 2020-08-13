@@ -17,7 +17,7 @@ def url_details(request):
         'To check tasktrackerlist':'/tasktrackerlist/',
         'To create a task':'/taskcreate/',
         'To create a tasktracker':'/tasktrackercreate/',
-        'To update a task':'/taskupdate/<str:pk>',
+        'To update a task':'/taskupdate/<int:task_typr>/<str:task_desc>',
     }
     return Response(url_list)
 
